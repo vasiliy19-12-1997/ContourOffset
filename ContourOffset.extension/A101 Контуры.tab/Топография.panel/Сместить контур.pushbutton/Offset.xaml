@@ -1,0 +1,22 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сместить контур" Width="360" SizeToContent="Height"
+        ResizeMode="NoResize" ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner">
+  <StackPanel Margin="20" KeyboardNavigation.TabNavigation="Cycle">
+    <Label Target="{Binding ElementName=Distance}" Padding="0,0,0,5"
+           Content="Расстояние, мм"/>
+    <TextBox x:Name="Distance" Text="20" Padding="4"/>
+    <StackPanel Orientation="Horizontal" Margin="0,14,0,0">
+      <RadioButton x:Name="Outward" Content="Наружу" IsChecked="True" Margin="0,0,24,0"/>
+      <RadioButton Content="Внутрь"/>
+    </StackPanel>
+    <TextBlock x:Name="InputError" Foreground="Firebrick" TextWrapping="Wrap"
+               Margin="0,8,0,0"/>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,14,0,0">
+      <Button Content="Сместить" Click="apply_offset" IsDefault="True"
+              MinWidth="92" Padding="8,4" Margin="0,0,8,0"/>
+      <Button Content="Отмена" IsCancel="True" MinWidth="80" Padding="8,4"/>
+    </StackPanel>
+  </StackPanel>
+</Window>

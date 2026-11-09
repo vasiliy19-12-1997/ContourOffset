@@ -1,0 +1,26 @@
+# Generated distribution archive
+/ContourOffset.zip
+/build/
+/dist/
+
+# Python environments and caches
+/.venv/
+/venv/
+/.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Local IDE data
+/.vs/
+/.vscode/
+/.idea/
+
+# AutoCAD backups, autosaves, and drawing locks
+*.bak
+*.sv$
+*.dwl
+*.dwl2
+
+# Windows Explorer metadata
+Thumbs.db
+Desktop.ini
